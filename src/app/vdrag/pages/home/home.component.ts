@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.data && changes.data.currentValue) {
-      // this.componentDataService.restore(this.data);
+      this.componentDataService.restore(this.data);
     }
   }
 

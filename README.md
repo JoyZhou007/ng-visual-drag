@@ -1,10 +1,7 @@
-# NgxVisualDrag
+# NgVisualDrag
 
 This library was a visual drag component develop by angular
 
-# Installation
-
-    npm i ngx-visual-drag
 
 ## Params
 
@@ -44,6 +41,25 @@ This library was a visual drag component develop by angular
         }
 
 - (onDataSave) 画布保存时的回调 `EventEmitter<StorageData>`
+
+-------
+
+## Preparations
+
+### before import NgxVisualDragModule Module.
+
+- install `ng-zorro-antd`
+- add asset in your `angular.json` at
+
+              "assets": [
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/  icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
+            ]
+
+---
 
 ## Import Module
 
